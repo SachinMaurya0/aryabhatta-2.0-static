@@ -1,86 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Results | Aryabhatta 2.0</title>
-  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
   <header>
-    <nav class="navbar">
-      <h1 class="logo">Aryabhatta 2.0</h1>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+    <nav class= "navbar flex justify-between items-center px-6 py-4 shadow-md bg-white">
+      <h1 class="logo text-2xl font-bold text-orange-600">Aryabhatta 2.0</h1>
+      <div class="menu-toggle cursor-pointer md:hidden">
+        <span class="block w-6 h-1 bg-gray-700 mb-1"></span>
+        <span class="block w-6 h-1 bg-gray-700 mb-1"></span>
+        <span class="block w-6 h-1 bg-gray-700"></span>
       </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="results.html">Results</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <ul class="nav-links hidden md:flex gap-6 font-medium text-gray-700">
+        <li><a href="index.html" class="hover:text-orange-600">Home</a></li>
+        <li><a href="about.html" class="hover:text-orange-600">About</a></li>
+        <li><a href="results.html" class="text-orange-600 font-semibold">Results</a></li>
+        <li><a href="contact.html" class="hover:text-orange-600">Contact</a></li>
       </ul>
     </nav>
-      <!-- <h1 class="logo">Aryabhatta 2.0</h1>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="results.html">Results</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav> -->
   </header>
 
-  <section class="hero">
-    <h2>Student Results</h2>
-    <p>Here are some of our proud achievers!</p>
+  <!-- Results Section -->
+  <section class="px-4 py-12 text-center md:px-12 lg:px-20">
+    <h2 class="text-3xl font-bold text-orange-600 mb-4"> SSC Student Results</h2>
+    <p class="text-gray-600 mb-8">Here are some of our proud achievers!</p>
 
-    <table style="margin: 2rem auto; border-collapse: collapse; width: 90%; max-width: 600px;">
-      <thead style="background-color: orange; color: white;">
-        <tr>
-          <th style="padding: 10px; border: 1px solid #ccc;">Name</th>
-          <th style="padding: 10px; border: 1px solid #ccc;">Score (%)</th>
-          <th style="padding: 10px; border: 1px solid #ccc;">School</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="padding: 10px; border: 1px solid #ccc; text-align: center;">
-            <img src="./assets/personalities/topper 2025/Anupam.jpeg" 
-                 alt="Anupam Mehta" 
-                 style="width: 100px; height: 100px; border-radius: 50%; border: 2px solid black; object-fit: cover; display: block; margin: 0 auto;">
-            <div style="margin-top: 5px;">Mehta</div>
-          </td>
+    <div class="overflow-x-auto">
+      <table class="mx-auto w-full max-w-4xl table-auto border border-gray-200">
+        <thead class="bg-orange-500 text-white">
+          <tr>
+            <th class="px-4 py-3 border border-gray-200">Name</th>
+            <th class="px-4 py-3 border border-gray-200">Score (%)</th>
+            <th class="px-4 py-3 border border-gray-200">School</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hover:bg-orange-50">
+            <td class="px-4 py-4 border border-gray-200 text-center">
+              <img src="./assets/personalities/topper 2025/Anupam.jpeg"
+                alt="Anupam Mehta"
+                class="w-24 h-24 rounded-full border-2 border-gray-300 object-cover mx-auto mb-2">
+              <div class="font-medium">Mehta</div>
+            </td>
+            <td class="px-4 py-4 border border-gray-200 text-center">92%</td>
+            <td class="px-4 py-4 border border-gray-200 text-center">Baba High School, Bhiwandi</td>
+          </tr>
+
+          <tr class="hover:bg-orange-50">
+            <td class="px-4 py-4 border border-gray-200 text-center">
+              <img src="./assets/personalities/topper 2025/StudentImage.jpeg"
+                alt="Student Name"
+                class="w-24 h-24 rounded-full border-2 border-gray-300 object-cover mx-auto mb-2">
+              <div class="font-medium">Student Name</div>
+            </td>
+            <td class="px-4 py-4 border border-gray-200 text-center">Score%</td>
+            <td class="px-4 py-4 border border-gray-200 text-center">School Name</td>
+          </tr>
+
+          <tr class="hover:bg-orange-50">
+            <td class="px-4 py-4 border border-gray-200 text-center">
+              <img src="./assets/personalities/topper 2025/StudentImage.jpeg"
+                alt="Student Name"
+                class="w-24 h-24 rounded-full border-2 border-gray-300 object-cover mx-auto mb-2">
+              <div class="font-medium">Student Name</div>
+            </td>
+            <td class="px-4 py-4 border border-gray-200 text-center">Score%</td>
+            <td class="px-4 py-4 border border-gray-200 text-center">School Name</td>
+          </tr>
+
+          <tr class="hover:bg-orange-50">
+            <td class="px-4 py-4 border border-gray-200 text-center">
+              <img src="./assets/personalities/topper 2025/StudentImage.jpeg"
+                alt="Student Name"
+                class="w-24 h-24 rounded-full border-2 border-gray-300 object-cover mx-auto mb-2">
+              <div class="font-medium">Student Name</div>
+            </td>
+            <td class="px-4 py-4 border border-gray-200 text-center">Score%</td>
+            <td class="px-4 py-4 border border-gray-200 text-center">School Name</td>
+          </tr>
           
-          <td style="padding: 10px; border: 1px solid #ccc;">92%</td>
-          <td style="padding: 10px; border: 1px solid #ccc;">Baba High School, Bhiwandi</td>
-        </tr>
+          
 
-        
-
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+    </div>
   </section>
 
-  <footer>
-    <p>Contact us at <br> 
-      <a href="tel:9284547475"><i class="fa-solid fa-phone"> </i> 9284547475</a> 
-      <br>
-      <a href="https://wa.me/9284547475" target="_blank"> <i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 text-center text-gray-700 text-sm">
+    <p class="mb-2">Contact us at</p>
+    <p>
+      <a href="tel:9284547475" class="text-orange-600 hover:underline">
+        <i class="fa-solid fa-phone"></i> 9284547475
+      </a>
+      <br />
+      <a href="https://wa.me/9284547475" target="_blank" class="text-green-600 hover:underline">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+      </a>
     </p>
   </footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const toggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-});
-</script>
+
+  <!-- Mobile Nav Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('hidden');
+        navLinks.classList.toggle('flex');
+        navLinks.classList.toggle('flex-col');
+        navLinks.classList.toggle('absolute');
+        navLinks.classList.toggle('top-full');
+        navLinks.classList.toggle('bg-white');
+        navLinks.classList.toggle('w-full');
+        navLinks.classList.toggle('left-0');
+        navLinks.classList.toggle('p-4');
+        navLinks.classList.toggle('shadow-md');
+      });
+    });
+  </script>
+
 </body>
 </html>
