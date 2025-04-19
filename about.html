@@ -4,59 +4,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About | Aryabhatta 2.0</title>
-  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
 </head>
-<body>
+<body class="bg-white text-gray-800">
+
   <header>
-    <nav class="navbar">
-      <h1 class="logo">Aryabhatta 2.0</h1>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+    <nav class="navbar flex justify-between items-center px-6 py-4 shadow-md bg-white">
+      <h1 class="logo text-2xl font-bold text-orange-600">Aryabhatta 2.0</h1>
+      <div class="menu-toggle cursor-pointer md:hidden">
+        <span class="block w-6 h-1 bg-gray-700 mb-1"></span>
+        <span class="block w-6 h-1 bg-gray-700 mb-1"></span>
+        <span class="block w-6 h-1 bg-gray-700"></span>
       </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="results.html">Results</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <ul class="nav-links hidden md:flex gap-6 font-medium text-gray-700">
+        <li><a href="index.html" class="hover:text-orange-600">Home</a></li>
+        <li><a href="about.html" class="text-orange-600 font-semibold">About</a></li>
+        <li><a href="results.html" class="hover:text-orange-600">Results</a></li>
+        <li><a href="contact.html" class="hover:text-orange-600">Contact</a></li>
       </ul>
-    </nav>
-      <!-- <h1 class="logo">Aryabhatta 2.0</h1>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="results.html">Results</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul> -->
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>About Us</h2>
-    <p>At Aryabhatta 2.0, we provide quality education for all subjects from Class 1 to 10. With a focus on personalized learning, we aim to help students achieve academic excellence in a supportive environment.</p>
-    <p>We believe in regular assessments, concept clarity, and interactive learning techniques to ensure every student reaches their potential.</p>
+  <!-- About Section -->
+  <section class="px-4 py-10 md:px-12 lg:px-20">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-orange-600 mb-6">About Us</h2>
+      <p class="text-lg mb-6">
+        Welcome to <span class="font-semibold text-orange-500">Aryabhatta 2.0</span> – your partner in academic success!
+      </p>
+      <p class="mb-6">
+        We are a dedicated team of experienced educators offering quality tuition for 
+        <strong>all subjects from Class 1 to Class 10</strong>. Whether your child needs help building strong fundamentals 
+        or preparing for exams, we’re here to guide them every step of the way.
+      </p>
+
+      <h3 class="text-2xl font-semibold text-gray-900 mb-4">Why Choose Us?</h3>
+      <ul class="space-y-3 mb-8">
+        <li class="flex items-start">
+          <span class="text-orange-500 text-xl mr-2">📚</span> 
+          <span><strong>Comprehensive Coverage:</strong> All major subjects under one roof.</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 text-xl mr-2">👩‍🏫</span> 
+          <span><strong>Experienced Teachers:</strong> Passionate and qualified tutors who care.</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 text-xl mr-2">🎯</span> 
+          <span><strong>Personalized Attention:</strong> Small batches for focused learning.</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 text-xl mr-2">🏆</span> 
+          <span><strong>Proven Results:</strong> Consistent academic improvement in our students.</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-orange-500 text-xl mr-2">📞</span> 
+          <span><strong>Easy Communication:</strong> Reach us easily via phone or WhatsApp.</span>
+        </li>
+      </ul>
+
+      <p class="text-lg">
+        Our goal is to create a supportive and motivating environment where students not only improve their grades 
+        but also grow in confidence and curiosity.
+      </p>
+      <p class="mt-4 text-lg text-orange-600 font-semibold">
+        Let’s build a brighter academic future together!
+      </p>
+    </div>
   </section>
 
-  <footer>
-    <p>Contact us at <br> 
-      <a href="tel:9284547475"><i class="fa-solid fa-phone"> </i> 9284547475</a> 
-      <br>
-      <a href="https://wa.me/9284547475" target="_blank"> <i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 mt-10 text-center text-gray-700 text-sm">
+    <p class="mb-2">Contact us at</p>
+    <p>
+      <a href="tel:9284547475" class="text-orange-600 hover:underline">
+        <i class="fa-solid fa-phone"></i> 9284547475
+      </a>
+      <br />
+      <a href="https://wa.me/9284547475" target="_blank" class="text-green-600 hover:underline">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+      </a>
     </p>
   </footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const toggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-});
-</script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('hidden');
+        navLinks.classList.toggle('flex');
+        navLinks.classList.toggle('flex-col');
+        navLinks.classList.toggle('absolute');
+        navLinks.classList.toggle('top-full');
+        navLinks.classList.toggle('bg-white');
+        navLinks.classList.toggle('w-full');
+        navLinks.classList.toggle('left-0');
+        navLinks.classList.toggle('p-4');
+        navLinks.classList.toggle('shadow-md');
+      });
+    });
+  </script>
 </body>
 </html>
